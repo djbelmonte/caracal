@@ -1,5 +1,5 @@
 require 'open-uri'
-require 'zip'
+require 'ruby_zip'
 
 require 'caracal/core/bookmarks'
 require 'caracal/core/custom_properties'

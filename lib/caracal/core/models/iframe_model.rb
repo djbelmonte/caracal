@@ -32,7 +32,7 @@ module Caracal
         #=============== PROCESSING =======================
 
         def preprocess!
-          ::Zip::File.open(file) do |zip|
+          ::RubyZip::File.open(file) do |zip|
             # locate relationships xml
             entry      = zip.glob('word/_rels/document.xml.rels').first
             content    = entry.get_input_stream.read

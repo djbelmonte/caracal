@@ -136,7 +136,7 @@ module Caracal
     # a string buffer. Order is important!
     #
     def render
-      buffer = ::Zip::OutputStream.write_buffer do |zip|
+      buffer = ::RubyZip::OutputStream.write_buffer do |zip|
         render_package_relationships(zip)
         render_content_types(zip)
         render_app(zip)

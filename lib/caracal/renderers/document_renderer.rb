@@ -107,7 +107,7 @@ module Caracal
       end
 
       def render_iframe(xml, model)
-        ::Zip::File.open(model.file) do |zip|
+        ::RubyZip::File.open(model.file) do |zip|
           a_href     = 'http://schemas.openxmlformats.org/drawingml/2006/main'
           pic_href   = 'http://schemas.openxmlformats.org/drawingml/2006/picture'
           r_href     = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
